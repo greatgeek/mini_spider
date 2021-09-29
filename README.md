@@ -1,8 +1,8 @@
-#####使用python开发定向抓取器mini_spider.py，实现对种子链接的广度优先抓取，并把URL长相符合特定pattern的网页保存到磁盘上。
+##### 使用python开发定向抓取器mini_spider.py，实现对种子链接的广度优先抓取，并把URL长相符合特定pattern的网页保存到磁盘上。
 	程序运行: 
 	python mini_spider.py -c spider.conf 
 
-#####配置文件spider.conf: 
+##### 配置文件spider.conf: 
 	[spider] 
 	url_list_file: ./urls ; 种子文件路径 
 	output_directory: ./output ; 抓取结果存储目录 
@@ -12,10 +12,10 @@
 	target_url: .*\.(gif|png|jpg|bmp)$ ; 需要存储的目标网页URL pattern(正则表达式) 
 	thread_count: 8 ; 抓取线程数 
 
-#####种子文件每行一条链接，例如: 
+##### 种子文件每行一条链接，例如: 
 	http://www.sina.com.cn 
 
-#####要求和注意事项: 
+##### 要求和注意事项: 
 - 需要支持命令行参数处理。具体包含: -h(帮助)、-v(版本)、-c(配置文件)
 
 - 需要按照广度优先的顺序抓取网页。
